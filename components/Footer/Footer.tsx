@@ -15,22 +15,21 @@ export default function Footer() {
   return (
     <footer className='w-full border-t'>
       <div className='max-w-[1366px] mx-auto px-4 py-3 flex flex-col gap-6'>
-        <div className='flex gap-8 w-full'>
-          <div className='flex-1'>
-            <Link
-              href='/'
-              className='flex items-center gap-2 font-semibold text-lg'
-            >
-              <Image
-                src='/images/svg/logo-verdeforma.svg'
-                alt='VerdeForma'
-                width={156}
-                height={64}
-              />
-            </Link>
-          </div>
-
-          <div className='flex-1'>
+        <div className='flex-1 min-w-[130px]'>
+          <Link
+            href='/'
+            className='flex items-center gap-2 font-semibold text-lg'
+          >
+            <Image
+              src='/images/svg/logo-verdeforma.svg'
+              alt='VerdeForma'
+              width={156}
+              height={64}
+            />
+          </Link>
+        </div>
+        <div className='flex flex-wrap md:flex-row gap-8 w-full'>
+          <div className='flex-1 min-w-[130px]'>
             <h4 className='font-semibold'>Créditos</h4>
             <ul className='text-sm'>
               <li>
@@ -42,7 +41,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className='flex-1'>
+          <div className='flex-1 min-w-[130px]'>
             <h4 className='font-semibold'>Ajuda</h4>
             <ul className='text-sm'>
               <li>
@@ -60,7 +59,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className='flex-1'>
+          <div className='flex-1 min-w-[130px]'>
             <h4 className='font-semibold'>Social</h4>
             <ul className='text-sm'>
               <li>
@@ -78,7 +77,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className='flex-1'>
+          <div className='flex-1 min-w-[130px]'>
             <h4 className='font-semibold'>E-commerce</h4>
             <ul className='text-sm'>
               <li>
@@ -91,7 +90,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className='flex flex-col md:flex-row justify-between items-center text-sm pt-4'>
+        <div className='flex flex-row justify-between items-center text-sm pt-4 mb-8'>
           <p>
             Built by{' '}
             <Link href='#' className='underline'>

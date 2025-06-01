@@ -10,6 +10,7 @@ import {
 } from '@/components/ui/navigation-menu';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
+import { SidebarTrigger } from '../ui/sidebar';
 
 export default function Navbar() {
   return (
@@ -26,7 +27,8 @@ export default function Navbar() {
         </Link>
 
         <NavigationMenu>
-          <NavigationMenuList className='flex gap-6'>
+          <SidebarTrigger className='md:hidden' />
+          <NavigationMenuList className='hidden md:flex gap-6'>
             <NavigationMenuItem>
               <NavigationMenuTrigger>Vasos</NavigationMenuTrigger>
               <NavigationMenuContent className='p-4 grid grid-cols-1 gap- rounded-md'>
