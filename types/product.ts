@@ -5,5 +5,8 @@ export interface Product {
   description: string;
   price: number;
   images: string[];
-  colors?: string[];
+  rating: number;
+  reviewCount: number;
+  isFull: boolean;
+  isFreeShipping: boolean;
 }
